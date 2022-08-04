@@ -31,6 +31,7 @@
   }
   h1{
     font-size:60px;
+    color: white;
   }
   header{
     position:fixed;
@@ -76,33 +77,41 @@
   }
   #projects{
     width:100%;
-    height:1000px;
-    background-color:white;
+    height:auto;    
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;    
+    background-size: cover;
     padding:20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
-    gap:20px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  #projects>h1{
+    grid-column: 1/span 3;
   }
   .project{
     border-radius:5px;
-    background-color:var(--Secondarycol);
-    width:320px;
+    width:500px;
+    height: 500px;
     padding:10px;
     color:white;
     box-shadow:0 2px 3px 2px grey;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
+    justify-content:center;    
     font-size:22px;
   }
-  .project>h4{
-    margin-top:5px;
+  .project-tile{
+    margin: 0 100px;
+    margin-right: 0;
   }
   .project-img{
-    width:300px;
-    height:300px;
+    width:450px;
+    height:450px;
   }
   
   @media (max-device-width:500px){    
@@ -113,7 +122,6 @@
       align-items:center;
       justify-content:center;
       gap:50px;
-      color:cyan;
       font-size:30px;
       margin-left:0%;
     }  
@@ -125,20 +133,26 @@
     }
     #projects{
       width:100%;
-      height:1000px;
-      padding:10px;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      padding-top: 80px;
+      height:100%;
+      padding:50px;
+      display:grid;
+      grid-template-columns: 10px;
+      row-gap: 20px;
+      align-items: center;
+      margin-right: 0;
+    }
+    #projects>h1{
+      grid-column: 1/span 1;
+      text-align: center;
+      margin-left: 250px;
+      margin-right: 0;
     }
     .project{
       width:800px;
       height: 800px;
-      margin-top:30px;
-      padding-left: 5px;
-      padding-right:0px;
+      margin-top:30px;      
+      margin-left: 100px;
+      margin-right: 0;
     }    
     .project-img{
       width:95%;
