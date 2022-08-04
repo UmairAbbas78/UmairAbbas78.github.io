@@ -105,7 +105,7 @@
     height:300px;
   }
   
-  @media (pointer:none),(pointer:coarse),(max-width:600px){    
+  @media (max-device-width:500px){    
     nav{
       display:flex;
       flex-direction:row;  
