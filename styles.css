@@ -40,7 +40,7 @@
     z-index:3;
     background:var(--Primarycol);
     box-shadow:0px 0 10px 1px;
-    width:100%;
+    width:100vw;
     height:30px;
     padding:15px 5px;
     top:0px;
@@ -50,7 +50,7 @@
   }
   .intro{
     background:linear-gradient(45deg, rgba(134,134,134,1) 5%, rgba(55,55,55,1) 30%);
-    width:100%;
+    width:100vw;
     height:100vh;
     color:white;
     margin-top:60px;
@@ -76,21 +76,20 @@
     margin-left:70%;
   }
   #projects{
-    width:100%;
+    width:auto;
     height:auto;    
+    padding:50px;
+    display:grid;
+    grid-template-columns: auto auto;
+    row-gap: 100px;
     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     background-repeat: no-repeat;    
     background-size: cover;
-    padding:20px;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 20px;
-    column-gap: 20px;
-    text-align: center;
+    justify-items: center;
     align-items: center;
   }
   #projects>h1{
-    grid-column: 1/span 3;
+    grid-column: 1/span 2;
   }
   .project{
     border-radius:5px;
@@ -106,8 +105,8 @@
     font-size:22px;
   }
   .project-tile{
-    margin: 0 100px;
-    margin-right: 0;
+    margin: auto auto;
+    text-align: center;
   }
   .project-img{
     width:450px;
@@ -132,7 +131,7 @@
       justify-content: center;
     }
     #projects{
-      width:100%;
+      width:100vw;
       height:100%;
       padding:50px;
       display:grid;
