@@ -16,21 +16,21 @@ body{
   color: var(--whiteColor);
 }
 .underline{
-  width : 8em;
+  width : 16em;
   height: 2px;
   border-radius: 1px;
   background-color: var(--SecondaryColor);
-  margin-left: 23px;
+  margin-left: 30px;
 }
 .title{
   color: var(--whiteColor);
-  font-size: 24px;
+  font-size: 50px;
   margin: 50px 0px 0px 17px;
 }
 
 .semi-title{  
   color: var(--whiteColor);
-  font-size: 18px;
+  font-size: 40px;
   margin: 0px 0px 0px 17px;
 }
 
@@ -40,13 +40,13 @@ body{
 }
 
 .logo-image{
-  width: 98px;
-  height: 138px;
+  width: 500px;
+  height: 350px;
 }
 
 .bold{
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 35px;
   color: var(--whiteColor);
 }
 
@@ -56,9 +56,9 @@ body{
 }
 
 .brief-desc{
-  margin-top: 20px;
+  margin-top: 70px;
   font-family: 'Jost', sans-serif;  
-  font-size: 18px;
+  font-size: 30px;
   color: var(--whileLightColor);
 }
 
@@ -69,8 +69,8 @@ body{
   margin: 20px 0px 20px 17px;
 }
 #profile-link{
-  width: 30px;
-  height: 30px;
+  width: 100px;
+  height: 100px;
 }
 
 hr{
@@ -84,13 +84,16 @@ hr{
 }
 
 .profile-image{
-  width: 160px;
-  height: 200px;
-  margin: 10px 20px 0px 15px;
+  width: 350px;
+  height: 400px;
+  margin: 10px 30px 0px 15px;
   border: var(--SecondaryColor) solid;
   border-radius: 10px;
 }
 
+.no-gap{
+  margin-top: 5px;
+}
 .underline-wrap{
   width: 3em;
 }
