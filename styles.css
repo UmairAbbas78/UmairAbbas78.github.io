@@ -97,3 +97,56 @@ hr{
 .underline-wrap{
   width: 3em;
 }
+.underline-wrap-med{
+  width: 5em;
+}
+
+.button{
+  width: 190px;
+  height: 80px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: bolder;
+}
+.button>p{
+  margin-top: 15px;
+}
+.main-button{
+  background-color: var(--SecondaryColor);  
+  color: var(--PrimaryColor);
+}
+.secondary-button{
+  border: solid var(--SecondaryColor) 5px;
+  color:var(--whiteColor)
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 40px;
+}
+.details{
+  padding: 20px;
+}
+.details>h1{
+  font-size:35px;
+  margin-bottom: 20px;
+}
+.project{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 5px var(--SecondaryColor);
+}
+.project-img{
+  width: 350px;
+  height: 330px;
+  border-radius: 60px;
+  border: 2px solid var(--SecondaryColor);
+  margin-right: 70px;
+  margin-bottom: 30px;
+}
