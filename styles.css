@@ -15,6 +15,22 @@ body{
   font-family: 'Inter', sans-serif;  
   color: var(--whiteColor);
 }
+
+.Head{
+  display: flex;
+}
+
+.resume{
+  margin-top: 50px;
+  margin-left: 50%;
+  background-color: #FF7F11;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color:#F6F7EB;
+}
+
 .underline{
   width : 16em;
   height: 2px;
@@ -127,6 +143,7 @@ hr{
   display: flex;
   flex-direction: row;
   gap: 30px;
+  justify-content:center;
   margin-top: 40px;
 }
 .details{
@@ -141,6 +158,9 @@ hr{
   display: flex;
   flex-direction: row;
   border-bottom: solid 5px var(--SecondaryColor);
+}
+.corner-text{
+  max-width: 80%;
 }
 .project-img{
   width: 350px;
