@@ -18,18 +18,16 @@ body{
 
 .Head{
   display: flex;
+  gap:50vw; 
+  /* background-color: red; */
+  margin-left: 15px;
+  padding: 0px 15px;
 }
 
 .resume{
   margin-top: 50px;
-  margin-left: 50%;
-  background-color: #FF7F11;
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 20px;
-  text-decoration: none;
-  color:#F6F7EB;
+  width: 8em;
+  height: 2em;  
 }
 
 .underline{
@@ -41,7 +39,7 @@ body{
 }
 .title{
   color: var(--whiteColor);
-  font-size: 50px;
+  font-size: 3em;
   margin: 50px 0px 0px 17px;
 }
 
@@ -122,19 +120,19 @@ hr{
   width: 190px;
   height: 80px;
   border-radius: 50px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: 30px;
   text-align: center;
   text-decoration: none;
   font-family: 'Jost', sans-serif;
-  font-weight: bolder;
+  font-weight: bolder;  
 }
 .button>p{
   margin-top: 15px;
 }
 .main-button{
   background-color: var(--SecondaryColor);  
-  color: var(--PrimaryColor);
+  color: #F6F7EB;
 }
 .secondary-button{
   border: solid var(--SecondaryColor) 5px;
@@ -159,6 +157,9 @@ hr{
   display: flex;
   flex-direction: row;
   border-bottom: solid 5px var(--SecondaryColor);
+}
+.med-text{
+  font-size: 30px;
 }
 .corner-text{
   max-width: 80%;
