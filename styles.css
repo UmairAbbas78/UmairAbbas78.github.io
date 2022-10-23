@@ -174,7 +174,7 @@ hr{
 }
 
 
-@media (min-width : 360px){
+@media only screen and (min-width: 768px) {
     .project-col{
       display: flex;
       justify-content: space-evenly;
