@@ -172,3 +172,38 @@ hr{
   margin-right: 70px;
   margin-bottom: 30px;
 }
+
+
+@media (min-width : 360px){
+    .project-col{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .project-img{
+      margin-left: auto;
+    }
+    .project{
+      display: grid;
+      grid-template-rows: 350px 15em;
+      width: 500px;
+      border-left: #ff801186 solid 1px;
+      padding: 20px;
+    }
+    .details{
+      text-align: center;
+      margin: auto;
+    }
+    .brief-desc{      
+      font-size: 1.5em;
+      font-weight: lighter;
+      margin: 0;
+    }
+    .details>h1{
+      font-size: 1.8em;
+    }
+    .brief{
+      padding: 5em;
+      display: grid;
+      grid-template-columns: 30em 28em;
+    }
+}
