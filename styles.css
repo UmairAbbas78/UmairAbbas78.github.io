@@ -18,13 +18,15 @@ body{
 
 .Head{
   display: flex;
-  gap:50vw; 
-  /* background-color: red; */
+  justify-content: space-around;
+  gap:20em;
   margin-left: 15px;
   padding: 0px 15px;
+  width: 100%;
 }
 
 .resume{
+  justify-self: flex-end;
   margin-top: 50px;
   width: 8em;
   height: 2em;  
@@ -73,7 +75,7 @@ body{
 .brief-desc{
   margin-top: 70px;
   font-family: 'Jost', sans-serif;  
-  font-size: 30px;
+  font-size: 1.5em;
   color: var(--whileLightColor);
 }
 
@@ -120,7 +122,6 @@ hr{
   width: 190px;
   height: 80px;
   border-radius: 50px;
-  /* margin-bottom: 10px; */
   font-size: 30px;
   text-align: center;
   text-decoration: none;
@@ -141,22 +142,27 @@ hr{
 .buttons{
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  justify-content:center;
-  margin-top: 40px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  /* gap: 30px; */
+  /* justify-content:center; */
+}
+.project-col{
+  margin-left: 5em;
 }
 .details{
   padding: 20px;
+  grid-template-rows: 30em;
 }
 .details>h1{
-  font-size:35px;
+  font-size:2.5em;
   margin-bottom: 20px;
 }
 .project{
   margin-top: 30px;
   display: flex;
-  flex-direction: row;
   border-bottom: solid 5px var(--SecondaryColor);
+  margin-bottom: 5em;
 }
 .med-text{
   font-size: 30px;
@@ -167,12 +173,12 @@ hr{
 .project-img{
   width: 350px;
   height: 330px;
+  grid-row: 1/span 2;
   border-radius: 60px;
   border: 2px solid var(--SecondaryColor);
   margin-right: 70px;
   margin-bottom: 30px;
 }
-
 
 @media (min-width:1000px) {
     .project-col{
@@ -182,16 +188,19 @@ hr{
     .project-img{
       margin-left: auto;
     }
+    .buttons{
+      margin-left: 2em;
+    }
     .project{
       display: grid;
-      grid-template-rows: 350px 15em;
+      grid-template: 10em / 22em;
       width: 500px;
       border-left: #ff801186 solid 1px;
       padding: 20px;
     }
     .details{
       text-align: center;
-      margin: auto;
+      margin-left: 2.8em;
     }
     .brief-desc{      
       font-size: 1.5em;
